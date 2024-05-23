@@ -46,7 +46,7 @@ public class ProductControl extends HttpServlet {
 				ProductBean prodotto = model.doRetrieveByKey(codice);
 				request.setAttribute("prodottoDettaglio", prodotto);
 			} catch (SQLException e) {
-				e.printStackTrace();
+				e.printStackTrace(); 
 			}
 			finally {
 				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/productDetail.jsp");
